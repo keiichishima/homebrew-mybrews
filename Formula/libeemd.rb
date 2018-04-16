@@ -3,8 +3,8 @@ class Libeemd < Formula
   homepage "https://bitbucket.org/luukko/libeemd"
   url "https://bitbucket.org/luukko/libeemd/get/v1.4.tar.gz"
   sha256 "c484f4287f4469f3ac100cf4ecead8fd24bf43854efa63650934dd698d6b298b"
-  depends_on "gsl" => :run
-  depends_on "pkg-config" => :run
+  depends_on "gsl"
+  depends_on "pkg-config"
   def install
     args = %W[
       PREFIX=#{prefix}
